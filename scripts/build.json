@@ -1,0 +1,22 @@
+{
+    "path": "./client",
+    "dest": "./public",
+    "include": [],
+    "exclude": [
+        "*.d.ts"
+    ],
+    "task": [
+        {
+            "suf": ".ts",
+            "libs": [
+                "ts2js"
+            ],
+            "args": [
+                {
+                    "removeComments": true,
+                    "target": "es6"
+                }
+            ]
+        }
+    ]
+}
